@@ -18,4 +18,28 @@ Discord: Turtle#5883
 
 ## Requirements
 
-This module requires the following modules:
+To be added
+
+## Recommended modules
+
+To be added
+
+## Installation
+
+To be added
+
+## Configuration
+
+To be added
+
+## Troubleshooting
+
+To be added
+
+## FAQ
+
+To be added
+
+# Maintainers
+
+Turtle#5883
