@@ -44,6 +44,9 @@ Discord: Turtle#5883
 - Select activity from interface ❌
 - Different model/models load for each of the activities ❌
 - Initial script for bot to be able to be ran from anywhere ❌
+- Discord bot to display hourly statistics ❌
+- Login system ❌
+- Live version ❌
  
 
 
