@@ -42,8 +42,8 @@ To be added
 ## FAQ
 
 To be added
-**Q: I want to prevent robots from indexing my custom error pages by
-setting the robots meta tag in the HTML head to "noindex".**
+<!-- **Q: I want to prevent robots from indexing my custom error pages by
+setting the robots meta tag in the HTML head to "noindex".** -->
 
 ## Maintainers
 
