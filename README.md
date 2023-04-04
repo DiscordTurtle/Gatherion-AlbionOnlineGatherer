@@ -62,13 +62,13 @@ To be added
 ## Configuration
 For all of the changes in the game settings, first reset to default and then modify them to the correct values.
 Graphics:
-    - Display: Window
-    - Resolution: 1024x768
-    - V-Sync: OFF
-    - Frame rate limit: 30
-    - Visual Quality: Low
+- Display: Window
+- Resolution: 1024x768
+- V-Sync: OFF
+- Frame rate limit: 30
+- Visual Quality: Low
 Interface:
-    - HUD size (scaling): 80% (standard for desktop)
+- HUD size (scaling): 80% (standard for desktop)
 
 ## Troubleshooting
 
