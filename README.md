@@ -29,8 +29,8 @@ Discord: Turtle#5883
 ## Steps
 - Fix window capture ✔️
 - Fix initial place of window and bring forward ✔️
-- Create searching state ❌
-- Create gathering state ❌
+- Create searching state ✔️
+- Create gathering state ✔️
 - Create script to take input pictures ❌
 - Take pictures ❌
 - Upload them on the cloud ❌

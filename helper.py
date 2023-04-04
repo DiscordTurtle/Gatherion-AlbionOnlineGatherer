@@ -7,6 +7,7 @@ class Variables:
     window_rect = win32gui.GetWindowRect(albion_hwnd)
     width = window_rect[2] - window_rect[0]
     height = window_rect[3] - window_rect[1]
+    window_center = [int(width/2), int(height/2)]
     
 
 
