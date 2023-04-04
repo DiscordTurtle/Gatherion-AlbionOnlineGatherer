@@ -16,6 +16,8 @@ while True:
     screenshot = Variables.window_capture.get_screenshot()
     toggle_vision(screenshot, vision_bool)
     
+    
+    
     if cv.waitKey(25) & 0xFF == ord('q'):
         cv.destroyAllWindows()
         break
