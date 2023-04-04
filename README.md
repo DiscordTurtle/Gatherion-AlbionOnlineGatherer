@@ -37,12 +37,13 @@ Discord: Turtle#5883
 - Train model ❌
 - Hook model to main script ❌
 - Create basic interface to start/stop the bot ❌
+- Create the other models ❌
 - (Maybe) Bot changes game settings on run initialization ❌
 - Bot changes behaviour based on gear equipped ❌
 - (Maybe) Map selection from interface ❌
 - Select activity from interface ❌
 - Different model/models load for each of the activities ❌
-- 
+- Initial script for bot to be able to be ran from anywhere ❌
  
 
 
