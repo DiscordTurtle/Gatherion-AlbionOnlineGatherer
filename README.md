@@ -19,8 +19,8 @@ Discord: Turtle#5883
 ## Requirements
 
 To be added
-- [Views](https://www.drupal.org/project/views)
-- [Panels](https://www.drupal.org/project/panels)
+<!-- - [Views](https://www.drupal.org/project/views)
+- [Panels](https://www.drupal.org/project/panels) -->
 
 
 ## Recommended modules
