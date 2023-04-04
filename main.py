@@ -1,21 +1,24 @@
-from window_capture import *
-import cv2 as cv
+from helper import *
 import time
-class Variables:
-    albion_hwnd = win32gui.FindWindow(None, "Albion Online Client")
-    window_rect = win32gui.GetWindowRect(albion_hwnd)
-    width = window_rect[2] - window_rect[0]
-    height = window_rect[3] - window_rect[1]
-    window_capture = WindowCapture(width, height, window_rect)
+import cv2 as cv
 
 time.sleep(1)
-win32gui.SetForegroundWindow(Variables.albion_hwnd)
-win32gui.MoveWindow(Variables.albion_hwnd, 0, 0, Variables.width, Variables.height, True)
+
+vision_bool = True
+
+
+set_albion_foreground(Variables.albion_hwnd)
+
+move_albion_to_top_left(Variables.albion_hwnd, Variables.width, Variables.height)
 
 
 while True:
     screenshot = Variables.window_capture.get_screenshot()
-    cv.imshow('Computer Vision', screenshot)
+    toggle_vision(screenshot, vision_bool)
+    
     if cv.waitKey(25) & 0xFF == ord('q'):
+        cv.destroyAllWindows()
         break
-cv.destroyAllWindows()
+    
+    
+    
