@@ -36,7 +36,7 @@ Discord: Turtle#5883
 - Upload them on the cloud ❌
 - Label pictures ❌
 - Train model ❌
-- Hook model to main script ❌
+- Hook model to main script ✔️
 - Create basic interface to start/stop the bot ❌
 - Create the other models ❌
 - (Maybe) Bot changes game settings on run initialization ❌
