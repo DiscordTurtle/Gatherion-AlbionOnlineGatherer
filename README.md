@@ -3,8 +3,7 @@ Albion Online Gathering bot for all professions.
 
 Want to submit a bug report or a feature suggestion?
 
-Discord: Turtle#5883
-
+Discord: turtle5883
 
 ## Table of contents
 
