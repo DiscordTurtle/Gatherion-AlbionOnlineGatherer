@@ -1,6 +1,6 @@
 import torch
 #stone model
-model = torch.hub.load('ultralytics/yolov5','custom', path = 'limestone_test.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5','custom', path = 'models/limestone_test.pt', force_reload=True)
 
 from helper import *
 import time
