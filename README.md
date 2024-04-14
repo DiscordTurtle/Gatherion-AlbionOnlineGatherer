@@ -30,9 +30,9 @@ Discord: turtle5883
 - Fix initial place of window and bring forward ✔️
 - Create searching state ✔️
 - Create gathering state ✔️
-- Create script to take input pictures ❌
+- Create script to take input pictures ✔️
 - Take pictures ❌
-- Upload them on the cloud ❌
+- Upload them on the cloud ❌ For the future
 - Label pictures ❌
 - Train model ❌
 - Hook model to main script ✔️
