@@ -1,4 +1,4 @@
 
 
 
-# Determine when the nigga bite
+# Determine when  bite
