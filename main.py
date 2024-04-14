@@ -1,6 +1,6 @@
 import torch
 #stone model
-model = torch.hub.load('ultralytics/yolov5','custom', path = 'best1.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5','custom', path = 'limestone_test.pt', force_reload=True)
 
 from helper import *
 import time
@@ -51,7 +51,7 @@ def main():
         if keyboard.is_pressed("v"):
             vision_bool = not vision_bool            
             
-        go.update(centers, bot_bool)
+        go.update(centers, bot_bool, vision_bool)
         
         if cv.waitKey(25) & 0xFF == ord('q'):
             cv.destroyAllWindows()

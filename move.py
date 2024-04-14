@@ -79,8 +79,8 @@ class Move:
 		self.t = threading.Thread(target=self.run)
 		self.t.start()
     
-	def update(self, centers, bot_status):
-		print(f"Updating with centers: {centers} and bot_status: {bot_status}")
+	def update(self, centers, bot_status, vision_status):
+		print(f"Updating with centers: {centers}, bot_status: {bot_status}, vision_status: {vision_status}")
 		if bot_status==True:
 			self.state = 1
 		elif bot_status==False:
