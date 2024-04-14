@@ -44,19 +44,12 @@ def main():
         centers = get_center(rectangles)
         
         
-        if keyboard.is_pressed("n"):
-            bot_bool = True
- 
-        if keyboard.is_pressed("m"):
-            bot_bool = False
-
+        if keyboard.is_pressed("c"):
+            bot_bool = not bot_bool
+            
         #Toggle Vision
         if keyboard.is_pressed("v"):
-            vision_bool = True
- 
-        if keyboard.is_pressed("b"):
-            vision_bool = False
-            
+            vision_bool = not vision_bool            
             
         go.update(centers, bot_bool)
         
