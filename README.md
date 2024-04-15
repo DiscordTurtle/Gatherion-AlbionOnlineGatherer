@@ -31,7 +31,7 @@ Discord: turtle5883
 - Create searching state ✔️
 - Create gathering state ✔️
 - Create script to take input pictures ✔️
-- Take pictures ❌
+- Take pictures ✔️ (For stone)
 - Upload them on the cloud ❌ For the future
 - Label pictures ❌
 - Train model ❌
