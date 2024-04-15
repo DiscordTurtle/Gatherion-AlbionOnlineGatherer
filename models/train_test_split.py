@@ -13,23 +13,25 @@ random.shuffle(imgList)
 
 split = 0.2
 
-train_path = 'models/train'
-val_path = 'models/val'
+train_path = 'models/data/train'
+val_path = 'models/data/val'
 
+images_train_path = os.path.join(train_path, 'images')
+labels_train_path = os.path.join(train_path, 'labels')
+
+images_val_path = os.path.join(val_path, 'images')
+labels_val_path = os.path.join(val_path, 'labels')
+
+# Function to empty a directory
 def empty_directory(directory):
     if os.path.exists(directory):
         shutil.rmtree(directory)
     os.makedirs(directory)
 
-empty_directory(train_path)
-empty_directory(val_path)
-
-
-
-# if not os.path.isdir(train_path):
-#     os.makedirs(train_path)
-# if not os.path.isdir(val_path):
-#     os.makedirs(val_path)
+empty_directory(images_train_path)
+empty_directory(labels_train_path)
+empty_directory(images_val_path)
+empty_directory(labels_val_path)
 
 # imgLen = len(imgList)
 # print("Images in total: ", imgLen)
@@ -43,23 +45,23 @@ empty_directory(val_path)
 
 # for imgName in train_images:
 #     og_path = os.path.join(input_folder, imgName)
-#     target_path = os.path.join(train_path, imgName)
+#     target_path = os.path.join(images_train_path, imgName)
 
 #     shutil.copyfile(og_path, target_path)
 
 #     og_txt_path = os.path.join(input_folder, imgName.replace('.jpg', '.txt'))
-#     target_txt_path = os.path.join(train_path, imgName.replace('.jpg', '.txt'))
+#     target_txt_path = os.path.join(labels_train_path, imgName.replace('.jpg', '.txt'))
 
 #     shutil.copyfile(og_txt_path, target_txt_path)
 
 # for imgName in val_images:
 #     og_path = os.path.join(input_folder, imgName)
-#     target_path = os.path.join(val_path, imgName)
+#     target_path = os.path.join(images_val_path, imgName)
 
 #     shutil.copyfile(og_path, target_path)
 
 #     og_txt_path = os.path.join(input_folder, imgName.replace('.jpg', '.txt'))
-#     target_txt_path = os.path.join(val_path, imgName.replace('.jpg', '.txt'))
+#     target_txt_path = os.path.join(labels_val_path, imgName.replace('.jpg', '.txt'))
 
 #     shutil.copyfile(og_txt_path, target_txt_path)
 
