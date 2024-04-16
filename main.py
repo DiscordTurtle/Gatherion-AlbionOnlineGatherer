@@ -1,5 +1,9 @@
 import torch
 #stone model
+from ultralytics import YOLO 
+#model = torch.hub.load('ultralytics/yolov5','custom', path = 'models/limestone_test.pt', force_reload=True)
+#model = torch.hub.load('ultralytics/yolov5','custom', path = 'models/yolov8n.pt', force_reload=True)
+
 model = torch.hub.load('ultralytics/yolov5','custom', path = 'models/limestone_test.pt', force_reload=True)
 
 from helper import *

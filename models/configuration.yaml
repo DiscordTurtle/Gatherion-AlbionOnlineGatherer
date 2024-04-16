@@ -1,0 +1,18 @@
+path: C:\Users\Cristian Fildan\Desktop\Gatherion\Gatherion-AlbionOnlineGatherer\models\data
+train: images/train
+val: images/val
+
+
+# number of classes
+nc: 8
+
+# Classes
+names:
+  0: tier_1
+  1: tier_2
+  2: tier_3
+  3: tier_4
+  4: tier_5
+  5: tier_6
+  6: tier_7
+  7: tier_8
