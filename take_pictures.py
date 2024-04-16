@@ -63,6 +63,4 @@ def get_max_from_folder(folder):
     print(f"Max: {max}")
     return max + 1
     
-    
-    
 main()
