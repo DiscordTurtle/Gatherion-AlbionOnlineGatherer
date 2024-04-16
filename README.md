@@ -32,8 +32,8 @@ Discord: turtle5883
 - Create gathering state ✔️
 - Create script to take input pictures ✔️
 - Take pictures ✔️ (For stone)
-- Upload them on the cloud ❌ For the future
-- Label pictures ❌
+- Upload them on the cloud ❌ (Will be done in the future for easier training)
+- Label pictures ✔️
 - Train model ❌
 - Hook model to main script ✔️
 - Create basic interface to start/stop the bot ❌
