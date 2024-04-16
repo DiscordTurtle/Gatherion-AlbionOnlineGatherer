@@ -6,7 +6,7 @@ from ultralytics import YOLO
 #model = torch.hub.load('ultralytics/yolov5','custom', path = 'models/limestone_test.pt', force_reload=True)
 #model = torch.hub.load('ultralytics/yolov5','custom', path = 'models/yolov8n.pt', force_reload=True)
 
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='models/runs/detect/train4/weights/best.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='models/images/detect/train/weights/best.pt', force_reload=True)
 
 from helper import *
 import time
