@@ -18,7 +18,7 @@ Discord: turtle5883
 
 
 ## Features
-- Stone Gathering (WIP)
+- Stone Gathering ✔️ (Basic implementation)
 - Wood Gathering ❌
 - Fiber Gathering ❌
 - Ore Gathering ❌
@@ -28,13 +28,13 @@ Discord: turtle5883
 ## Steps
 - Fix window capture ✔️
 - Fix initial place of window and bring forward ✔️
-- Create searching state ✔️
+- Create searching state ✔️ (Basic implementation)
 - Create gathering state ✔️
 - Create script to take input pictures ✔️
-- Take pictures ✔️ (For stone)
+- Take pictures ✔️ (Basic implementation)
 - Upload them on the cloud ❌ (Will be done in the future for easier training)
-- Label pictures ✔️
-- Train model ❌
+- Label pictures ✔️ (Basic implementation)
+- Train model ✔️ (Basic implementation)
 - Hook model to main script ✔️
 - Create basic interface to start/stop the bot ❌
 - Create the other models ❌
