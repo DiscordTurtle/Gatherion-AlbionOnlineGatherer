@@ -32,21 +32,41 @@ leather_count_dict = {"tier_2_mob": 0,
 
 #fishing doesnt require one
 
-
 def count_class_entries(folder, material):
     used_dict = count_dict
     if material == "leather":
         used_dict = leather_count_dict
+    
+    # Initialize counts for each tier
+    tier_keys = ["tier_2", "tier_3", "tier_3_mob", "tier_4", "tier_4_mob", "tier_5", 
+                 "tier_5_mob", "tier_6", "tier_6_mob", "tier_7", "tier_7_mob", 
+                 "tier_8", "tier_8_mob"]
+    tier_counts = {key: 0 for key in tier_keys}
+    
     for filename in os.listdir(folder):
         if filename.endswith(".txt"):
-            with open(folder + "/" + filename) as f:
+            with open(os.path.join(folder, filename)) as f:
                 lines = f.readlines()
                 for line in lines:
-                    try:
-                        used_dict[line[0]] += 1
-                    except Exception as e:
-                        print(e)
-    print(count_dict)
+                    first_character = line.strip()[0]  # Get the first character of the line
+                    if first_character.isdigit():  # Check if the first character is a digit
+                        first_integer = int(first_character)  # Convert the first character to an integer
+                        if first_integer >= 0 and first_integer <= len(tier_keys)-1:  # Check if the integer is within the range of tier keys
+                            tier_key = tier_keys[first_integer]  # Get the corresponding tier key
+                            if tier_key in tier_counts:
+                                tier_counts[tier_key] += 1
+    
+    # Print counts for each tier
+    print("Material Class Counts:")
+    for tier, count in tier_counts.items():
+        print(f"{tier.capitalize()}: {count}")
+
+    # Optionally, you can update the global count_dict if needed
+    # count_dict.update(tier_counts)
+
+
+
+
 
 
 
@@ -71,7 +91,7 @@ def main():
 
     i = 0
     #Show the current count of each class
-    count_class_entries(folder)
+    count_class_entries(folder, material)
     
     while True: 
         screenshot = window_capture.get_screenshot()
@@ -97,9 +117,7 @@ def save_image(material,screenshot):
     cv.imwrite(folder + f"/{material}_{max}.jpg", screenshot)
     max += 1
     print(f"Saved {material}_{max}.jpg")
-    time.sleep(0.2)
-
-        
+    time.sleep(0.2)   
         
 def get_max_from_folder(folder):
     max = 0
@@ -111,4 +129,7 @@ def get_max_from_folder(folder):
     print(f"Max: {max}")
     return max + 1
     
-main()
+#main()
+
+folder = "input_pictures/input_stone"
+count_class_entries(folder, "stone")
