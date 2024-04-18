@@ -1,8 +1,13 @@
-tier_1
 tier_2
 tier_3
+tier_3_mob
 tier_4
+tier_4_mob
 tier_5
+tier_5_mob
 tier_6
+tier_6_mob
 tier_7
+tier_7_mob
 tier_8
+tier_8_mob
