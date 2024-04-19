@@ -131,5 +131,4 @@ def get_max_from_folder(folder):
     
 #main()
 
-folder = "input_pictures/input_stone"
-count_class_entries(folder, "stone")
+main()
