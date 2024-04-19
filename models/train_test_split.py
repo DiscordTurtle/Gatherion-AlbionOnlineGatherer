@@ -2,8 +2,9 @@ import os
 import random
 import shutil
 
-def train_test_split(input_folder='./input_pictures/input_fish', split=0.2, data_path='models/data'):
+def train_test_split(material = "stone", split=0.2, data_path='models/data'):
     # Extracting only image files
+    input_folder = "./input_pictures/input_" + str(material)
     fileList = os.listdir(input_folder)
     imgList = [file for file in fileList if file.endswith('.jpg')]
 
