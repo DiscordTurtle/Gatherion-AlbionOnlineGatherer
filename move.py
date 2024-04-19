@@ -80,7 +80,7 @@ class Move:
 		self.t.start()
     
 	def update(self, centers, bot_status, vision_status):
-		print(f"Updating with centers: {centers}, bot_status: {bot_status}, vision_status: {vision_status}")
+		#print(f"Updating with centers: {centers}, bot_status: {bot_status}, vision_status: {vision_status}")
 		if bot_status==True:
 			self.state = 1
 		elif bot_status==False:

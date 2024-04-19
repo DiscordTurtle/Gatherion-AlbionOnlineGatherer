@@ -20,7 +20,7 @@ def move_albion_to_top_left(albion_hwnd, width, height):
 
 def toggle_vision(frame, bool):
     if bool:
-        cv.imshow('Computer Vision', frame)
+        cv.imshow('Vision', frame)
 
 def get_center(rectangles):
     centers = []

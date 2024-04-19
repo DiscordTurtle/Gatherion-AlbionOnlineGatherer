@@ -1,5 +1,6 @@
 import torch
 import warnings
+import threading
 warnings.filterwarnings("ignore", category=UserWarning)
 #stone model
 from ultralytics import YOLO 
@@ -13,11 +14,14 @@ import time
 import cv2 as cv
 from move import Move
 import keyboard
+from search import *
+
 
 time.sleep(1)
 
-
+pointer_rgb = (74,121,115)
 def main():
+    
     
     vision_bool = True
     
@@ -31,6 +35,8 @@ def main():
     set_albion_foreground(Variables.albion_hwnd)
 
     move_albion_to_top_left(Variables.albion_hwnd, Variables.width, Variables.height)
+    pointer = cv.imread("pointer.jpg")
+
     
     
     while True: 
@@ -38,7 +44,35 @@ def main():
         results = model(screenshot)
         
         
+        #try to find pointer in the frame and draw a circle around it
+        #pointer is at location pointer.png
+        #pointer = cv.imread("pointer.png")
+        #do it with template matching
+        
+        
+        #print pixel color at 506, 325
+        
+        
+        
         frame = np.squeeze(results.render())
+
+        #print(frame[325, 506])
+
+
+        #cv match template
+        res = cv.matchTemplate(screenshot, pointer, cv.TM_CCOEFF_NORMED)
+        #draw the circle
+        min_val, max_val, min_loc, max_loc = cv.minMaxLoc(res)
+        cv.circle(frame, max_loc, 10, (0, 255, 0), 2)
+        print(max_loc)
+
+
+        threading.Thread(target=find_and_display_pointer, args=(frame,)).start()
+        
+        # Update circle position if pointer is found
+        
+            
+            
         
         toggle_vision(frame, vision_bool)
         
