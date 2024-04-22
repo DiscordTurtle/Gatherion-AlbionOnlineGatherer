@@ -64,12 +64,6 @@ def count_class_entries(folder, material):
     # Optionally, you can update the global count_dict if needed
     # count_dict.update(tier_counts)
 
-
-
-
-
-
-
 def main():
     
     window_capture = WindowCapture(Variables.width, Variables.height, Variables.window_rect)
@@ -131,4 +125,6 @@ def get_max_from_folder(folder):
     
 #main()
 
-main()
+#main()
+
+count_class_entries("input_pictures/input_stone", "stone")
